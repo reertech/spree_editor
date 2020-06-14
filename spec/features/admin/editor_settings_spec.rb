@@ -26,7 +26,8 @@ RSpec.feature 'Rich Editor Settings', :js do
       scenario 'will be applied when used' do
         visit spree.edit_admin_editor_settings_path
 
-        select2 'TinyMCE', from: 'Rich Editor engine'
+        find('.select2-container').click
+        find('.select2-result-label', text: 'TinyMCE').click
         click_button 'Update'
 
         visit spree.edit_admin_product_path(product)
@@ -38,7 +39,8 @@ RSpec.feature 'Rich Editor Settings', :js do
       scenario 'will be applied when used' do
         visit spree.edit_admin_editor_settings_path
 
-        select2 'CKEditor', from: 'Rich Editor engine'
+        find('.select2-container').click
+        find('.select2-result-label', text: 'CKEditor').click
         click_button 'Update'
 
         visit spree.edit_admin_product_path(product)
