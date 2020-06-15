@@ -28,8 +28,6 @@ Gem::Specification.new do |s|
   s.add_dependency 'ckeditor', '~> 5.1.0'
   s.add_dependency 'tinymce-rails', '~> 4.2.5'
   s.add_runtime_dependency 'deface', '~> 1.0'
-  s.add_dependency 'active_storage_validations'
-  s.add_dependency 'mini_magick', '>= 4.9.5'
 
   s.add_development_dependency 'i18n-spec', '>= 0.5.0'
   s.add_development_dependency 'guard-rspec'
